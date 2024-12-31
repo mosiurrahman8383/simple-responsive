@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .main-form-container{
+            display: flex;
+            justify-content: center;
+ 
+            /* border: 2px solid orange; */
+        }
+
+        .Form-container {
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid tomato; */
+            width: 50%;
+            height: 50vh;
+  
+            justify-content: center;
+            /* align-items: center; */
+        }
+        .Form-container input{
+            margin-top: 20px;
+            padding: 20px;
+            border: 2px solid tomato;
+            border-radius: 50px;
+            font-size: 20px;
+            background-color: skyblue;
+            color: white;
+            font-weight: 600px;
+        }
+
+        .Form-container input::placeholder {
+            color: white;
+            font-weight: 600;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="">Home</a>
+                <a href="">Profile</a>
+                <a href="">name</a>
+                <a href="">Blog</a>
+            </div>
+            <a href="">Login</a>
+        </nav>
+<section class="main-form-container">
+    <form class="Form-container">
+        <h1>Please Login First</h1>
+        <input type="text" name="" placeholder="Your Name" id="" required>
+        <input type="email" name="" placeholder="Your email" required id="">
+        <input type="password" name="" placeholder="Your Password" required id="">
+        <input type="submit"  value="Login">
+    </form>
+</section>
+
+    </header>
+</body>
+
+</html>
