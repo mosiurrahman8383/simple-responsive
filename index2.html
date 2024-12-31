@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        background-color: black;
+        height: 10vh;
+        align-items: center;
+
+    }
+
+    .nav-left a {
+        text-decoration: none;
+        font-size: 1.5em;
+        color: white;
+        margin-left: 1rem;
+
+    }
+
+    .nav-right a {
+        text-decoration: none;
+        font-size: 1.5em;
+        color: white;
+        margin-right: 1rem;
+    }
+    .section{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        border: 2px solid black;
+
+    }
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+
+        border: 2px solid black;
+        width: 50%;
+        height: 90vh;
+
+        justify-content: center;
+    }
+    .input-container input{
+        margin-top: 1.5rem;
+        padding: 1.5rem;
+        border: 2px solid tomato;
+        border-radius: 50px;
+        background-color: black;
+        color: white;
+        /* width: 50%; */
+        /* display: flex; */
+
+
+       
+    }
+    .input-container input::placeholder{
+        font-weight: 600;
+        font-size: 1.2em;
+        color: skyblue;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="">Home</a>
+                <a href="">Blog</a>
+                <a href="">Profile</a>
+            </div>
+            <div class="nav-right">
+                <a href="">Sign Up</a>
+                <a href="">Login</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+
+            <form class="input-container">
+                <h1>Please Login First</h1>
+                <input type="text" placeholder="Your Name" name="" id="" required>
+                <input type="email" placeholder="Your Email" required name="" id="">
+                <input type="password" placeholder="Your Password" required name="" id="">
+                <input type="submit" value="Login">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
